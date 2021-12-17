@@ -1,0 +1,17 @@
+@keyframes notion {
+  0% {
+    display: none;
+  }
+  25% {
+    display: block;
+  }
+  50%{
+    display: block;
+  }
+  75%{
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
