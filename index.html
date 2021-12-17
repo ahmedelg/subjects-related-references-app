@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title> Articles App </title>
+		<!-- Animations -->
+		<link rel="stylesheet" href="css/animations.css">
+		<!-- CUSTOM STYLE -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Application-Selector -->
+		<link rel="stylesheet" href="css/appsSelector.css">
+	</head>
+	<body>
+	
+		<!-- Application -->
+		<div class="website-window">
+			<div class="website-window-cnt">
+				<div class="define-article">
+					<div id="articles-info">
+						<p class="num-articles" id="num-articles">
+							0
+						</p>
+						<span> 
+							Articles
+						</span>
+					</div>
+					<button id="add-new-article" onclick="createNewArticle()">new</button>
+					<select name="" id="specify-article">
+						<!-- <option value="none">There is no articles found...</option> -->
+					</select>
+				</div>
+				<!-- <a href="/"> -->
+					<div id="title-settings"> 
+						<input type="text" class="change-title" id="changeTitle" placeholder="Type new name of article">
+						<button onclick="changeTitleFArticle()"> Change </button>
+					</div>
+					<h1 class="course-title" id="article-title">
+							Article Application
+					</h1>
+			<!-- </a> -->
+			<p id="references-links">
+				<!-- Links -->
+			</p>
+			<ol id="references-links-cnts">
+				<!-- <li>
+					<a href="https://gamedevelopment.tutsplus.com/tutorials/create-a-simple-space-shooter-game-in-html5-with-easeljs--active-10944">
+						Space Shooter Game U EaseJs
+					</a>
+				</li> -->
+			</ol>
+			<!-- Controllers -->
+			<div class="controlers">
+				<input type="text" name="" placeholder="add new reference" class="reference-inp cntrls-cnt" id="ref-inp">
+				<input type="text" name="" placeholder="href" class="reference-inp cntrls-cnt" id="href-inp">
+				<button class="reference-add cntrls-cnt" id="add-ref">add</button>
+				<button class="reference-add cntrls-cnt" id="dlt-ref">delete</button>
+				<button class="reference-add cntrls-cnt" id="save-ref" onclick="saveExistedReferences()">Save</button>
+			</div>
+				
+			</div>
+
+			
+
+			<!-- USER INTERACTIONs & BEHAVIOUR INTERFACEs -->
+			<div id="user-needs">
+				<!-- SAVE-OPTION -->
+				<div class="save-option">
+					<input type="button" value="resave" class="resave" onclick="resaveArticle()">
+					<input type="button" value="new" class="new" onclick="saveNewArticle()">
+				</div>
+			</div>			
+		</div>
+		
+		<!--  Applications-Selector -->
+		<div id="app-selector-cntr">
+			
+		</div>
+		
+		<script src="js/interface.js"></script>
+		<script src="js/globals.js"></script>
+		<!-- Hovers of elements -->
+		<script src="js/hovers/hover.js"></script>
+		<script src="js/localStorage.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/domStructures.js"></script>
+		<script src="js/listeners.js"></script>
+		<script src="js/main.js"></script>
+		
+		<!-- Themes -->
+		<script src="themes/ahmed.js"></script>
+
+	</body>
+</html>
